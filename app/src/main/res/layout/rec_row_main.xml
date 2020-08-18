@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:background="#171717"
+    app:cardBackgroundColor="#171717"
+    android:layout_marginTop="5dp"
+    android:id="@+id/card_recmain_container"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    app:cardCornerRadius="35dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_recmain_flag"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            tools:src="@drawable/flag" />
+
+        <TextView
+            android:id="@+id/txt_recmain_shortname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_recmain_flag"
+            android:text="AOA"
+            android:fontFamily="@font/franklinmedium"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/vistol"
+            android:id="@+id/txt_recmain_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_recmain_shortname"
+            android:layout_toRightOf="@id/img_recmain_flag"
+            android:textColor="#BABABA"
+            android:layout_toLeftOf="@id/txt_recmain_measure"
+            android:layout_marginLeft="10dp"
+            android:textSize="17dp"
+            tools:text="Angola money" />
+
+        <ImageButton
+            android:id="@+id/img_recmain_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@color/gre"
+            android:src="@drawable/ic_baseline_dehaze" />
+
+        <TextView
+            android:id="@+id/txt_recmain_calculated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/franklinmedium"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/img_recmain_change"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            tools:text="0.00 KZ" />
+
+        <TextView
+            android:maxLength="15"
+            android:fontFamily="@font/vistol"
+            android:id="@+id/txt_recmain_measure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_recmain_calculated"
+            android:layout_toLeftOf="@id/img_recmain_change"
+            android:textColor="#BABABA"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="1 AOA = 6,1333,061,14" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

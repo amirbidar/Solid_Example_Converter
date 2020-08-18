@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="About Me"
+        android:textColor="#5E6CB1"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/about_programmer"
+        android:layout_below="@id/constraintLayout">
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/actor"
+            android:gravity="center"
+            android:text="EMAIL :"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView11"
+            android:layout_marginBottom="24dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:focusable="true"
+            android:text="Coropontips@gmail.com"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#7A7979"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            android:lines="1"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:paddingTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:paddingBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/about_programmer"
+            android:layout_below="@id/textView3">
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text=" PROGRAMMER:"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/textView13"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/antic"
+            android:gravity="center"
+            android:text="Morteza.S"
+            android:textColor="#818080"
+            android:textSize="36sp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

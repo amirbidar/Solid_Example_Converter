@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview_row_names_show"
+    app:cardCornerRadius="30dp"
+    app:cardBackgroundColor="#171717"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_rowselectname_flags"
+        android:layout_width="55dp"
+        android:layout_centerVertical="true"
+        android:layout_height="65dp"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/img_rowselectname_flags"
+        android:id="@+id/txt_name"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        android:fontFamily="@font/vistol"
+        android:ellipsize="end"
+        android:layout_gravity="center_vertical"
+        android:layout_toLeftOf="@id/img_checked"
+        android:textSize="22sp"
+        tools:text="AED-United Arab Emirates"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:src="@drawable/ic_baseline_check_circle_outline_24"
+        android:layout_marginRight="30dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/img_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

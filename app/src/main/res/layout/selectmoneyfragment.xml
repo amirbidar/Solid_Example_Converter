@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#0E0E0E"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/prg_load_names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/rel_select_container2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/franklinmedium"
+            android:text="MAXRATE"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/franklinmedium"
+            android:text="CURRENCY LIVE RATE"
+            android:textColor="#878787"
+            android:textSize="13dp" />
+        <ImageButton
+            android:id="@+id/img_selectmoney_back"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/gre"
+            android:src="@drawable/ic_baseline_clea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/edt_search"
+            android:layout_below="@id/subtitle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edt_select_search"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:fontFamily="@font/vistol"
+            android:textSize="22sp"
+            android:hint="Search"
+            android:paddingLeft="10dp"
+            android:textColorHint="#9D9D9D" />
+    </RelativeLayout>
+ <androidx.recyclerview.widget.RecyclerView
+     android:layout_width="match_parent"
+     android:padding="10dp"
+     android:id="@+id/rec_select_names"
+     android:layout_below="@id/rel_select_container2"
+     android:layout_height="match_parent"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

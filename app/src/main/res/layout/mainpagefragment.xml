@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/nvaigation_main_drawer"
+    android:layout_height="match_parent">
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fab_add_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:fab_colorNormal="#862AFF"
+        app:fab_colorPressed="#6909FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rel_select_container2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/franklinmedium"
+            android:text="MAXRATE"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/franklinmedium"
+            android:text="CURRENCY LIVE RATE"
+            android:textColor="#878787"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/img_open_new"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+
+            android:background="@drawable/ic_baseline_drawer" />
+
+        <RelativeLayout
+            android:background="@drawable/update_background_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subtitle"
+            android:id="@+id/rel_main_refresh"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageButton
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gre"
+                android:id="@+id/img_main_refresh"
+                android:src="@drawable/ic_baseline_refresh" />
+
+            <TextView
+                android:layout_toRightOf="@+id/img_main_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last update"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/vistol"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/txt_lastupdate"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_main_date"
+                android:fontFamily="@font/vistol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/txt_lastupdate"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                tools:text="29/07/2020" />
+
+            <TextView
+                android:id="@+id/txt_main_clock"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/vistol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:layout_toRightOf="@id/txt_main_date"
+                tools:text="11:58" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_main_flag"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        tools:src="@drawable/flag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rel_select_container2" />
+
+    <TextView
+        android:id="@+id/txt_main_shortname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/franklinmedium"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        tools:text="BTC"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/img_main_flag"
+        app:layout_constraintTop_toBottomOf="@+id/rel_select_container2" />
+
+    <TextView
+        android:id="@+id/txt_main_fullname"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/vistol"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        tools:text="BITCOIN"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/img_main_flag"
+        app:layout_constraintTop_toBottomOf="@+id/txt_main_shortname" />
+
+
+    <EditText
+        android:id="@+id/edt_number"
+        android:layout_width="0dp"
+        android:fontFamily="@font/vistol"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/gre"
+        android:gravity="right|center_vertical"
+        android:inputType="numberDecimal"
+        android:maxLength="11"
+        android:text="0"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_main_shortname"
+        app:layout_constraintTop_toBottomOf="@+id/rel_select_container2" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#6709FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_main_fullname" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_main_showmain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
